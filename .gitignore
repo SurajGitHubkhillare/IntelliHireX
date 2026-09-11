@@ -1,0 +1,47 @@
+# ===========================
+# Python AI Service
+# ===========================
+python-ai-service/__pycache__/
+python-ai-service/**/__pycache__/
+python-ai-service/*.pyc
+python-ai-service/.env
+python-ai-service/venv/
+python-ai-service/.venv/
+
+# ===========================
+# Spring Boot Backend
+# ===========================
+backend-springboot/target/
+backend-springboot/.env
+backend-springboot/*.jar
+
+# ===========================
+# React Frontend
+# ===========================
+frontend-react/node_modules/
+frontend-react/dist/
+frontend-react/.env
+frontend-react/.env.local
+
+# ===========================
+# Database / Sensitive
+# ===========================
+*.sql.bak
+database/*.dump
+
+# ===========================
+# OS & Editor Junk
+# ===========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.suo
+*.sw?
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
