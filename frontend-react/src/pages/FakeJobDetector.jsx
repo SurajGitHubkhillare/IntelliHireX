@@ -65,7 +65,8 @@ const FakeJobDetector = () => {
     setLoading(true);
     try {
       // Call Python AI microservice (or proxied Spring Boot endpoint)
-      const res = await axios.post('http://localhost:8000/api/v1/predict-fake-job', formData);
+      const aiBase = import.meta.env.VITE_AI_URL || 'http://localhost:8000';
+      const res = await axios.post(`${aiBase}/api/v1/predict-fake-job`, formData);
       if (res.data && res.data.data) {
         setResult(res.data.data);
         toast.success('Job analysis completed!');
